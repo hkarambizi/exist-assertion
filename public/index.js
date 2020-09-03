@@ -23,9 +23,8 @@ const dropdown = document.getElementById('dropdown');
 const dropTrigger = document.getElementById('dropdown-trigger');
 const dropOpts = document.querySelectorAll('.dropdown-opts');
 dropOpts.forEach(opt => {
-    opt.addEventListener('click', () => {
-        dropdown.classList.add('hidden');
-
+    opt.addEventListener('click', (e) => {
+        e.target.remove()
     })
 })
 dropTrigger.addEventListener('mouseenter', () => {

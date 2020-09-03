@@ -12,11 +12,10 @@ describe("Existence", function(){
         cy.visit(baseUrl)
     })
 
-
-    it("should find dropdown", ()=> {
+    it("should not find removed dropdown option", ()=> {
         showOptions();
         chooseOption('1')
-        cy.get('p').contains('Option 1').should('not.exist');
+        cy.contains('Option 1').should('not.exist');
 
         // arbitrary test to complete after above
         cy.get('#first')
