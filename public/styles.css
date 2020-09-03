@@ -1,0 +1,33 @@
+nav {
+  background-color: black;
+  color: white;
+  min-height: 2em;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
+.hidden {
+  display: none;
+}
+#dropdown-trigger:hover {
+  font-weight: bold;
+}
+#dropdown {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.dropdown-opts {
+  border: 1px solid darkgrey;
+  font-size: x-large;
+  font-family: Helvetica;
+  background: lightcyan;
+}
+.dropdown-opts:hover {
+  background: cyan;
+}

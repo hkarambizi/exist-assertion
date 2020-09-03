@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li id="dropdown-trigger" data-cy="test-trigger" class="madeupclass">Pages</li>
+        </ul>
+    </nav>
+    <div id="dropdown" class="hidden">
+        <div class="dropdown-opts">
+            <p>Option 1</p>
+        </div>
+        <div class="dropdown-opts">
+            <p>Option 3</p>
+        </div>
+        <div class="dropdown-opts">
+            <p>Option 3</p>
+        </div>
+        <div class="dropdown-opts">
+            <p>Option</p>
+        </div>
+    </div>
+    <h1>Testing Hover and Click</h1>
+    <form id="name">
+        <input type="text" id="first" name="first" class="form-input">
+        <input type="text" id="last" name="last" class="form-input">
+        <div class="form-select">
+            <select class="pick">
+                <option value="2">Yes</option>
+                <option value="3">No</option>
+            </select>
+        </div>
+        <div class="form-select">
+            <select class="pick">
+                <option value="23">True</option>
+                <option value="1">False</option>
+            </select>
+        </div>
+        <input type="submit" id="form-submit">
+    </form>
+
+</body>
+<script src="index.js"></script>
+</html>
